@@ -1,5 +1,5 @@
 {
-  "name": "websiteOnHerokuSept2021",
+  "name": "firstWebApp",
   "version": "1.0.0",
   "description": "A little bit of everything",
   "main": "server.js",
