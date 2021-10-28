@@ -3,7 +3,9 @@ const router = express.Router();
 
 // GET one question
 router.get('/:id', (req, res) => {
-    res.send(`GET request for question number ${req.params.id}`)
+    const questionNr = "";
+    res.render('layouts/question', { questionNr: req.params.id });
+//    res.send(`GET request for question number ${req.params.id}`)
 });
 
 module.exports = router;
