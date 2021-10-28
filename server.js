@@ -2,11 +2,11 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
 
-import express from 'express';
+const express = require('express');
 const app = express();
 
-import indexRouter from './routes/index';
-import questionsRouter from './routes/questions';
+const indexRouter = require('./routes/index');
+const questionsRouter = require('./routes/questions');
 
 app.use('/', indexRouter);
 app.use('/questions', questionsRouter);
